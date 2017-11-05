@@ -1,0 +1,46 @@
+@mixin typo-setup($size, $ttColor, $ttWieght) {
+   font-size: $size;
+   color: $ttColor;
+   font-weight: $ttWieght
+  }
+
+  html{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+  }
+.dd_h1_white{
+    @include typo-setup( 5.55rem,#ffffff ,900 );
+    margin: 0;
+    text-align: center;
+     @media (max-width: 599px) {
+        font-size: 2.5rem;
+     }  
+}
+
+.dd_h1_blue{
+    @include typo-setup( 5.55rem,$mainHeadingColor ,900 );
+    margin: 0;
+    text-align: center;
+    width: 41.88rem;
+    @media (max-width: 599px) {
+        font-size: 2.5rem;
+     }  
+}
+
+
+
+.dd_smallText_white{
+    @include typo-setup( 2rem, #fff, 500 );
+    margin: 0;
+}
+
+.dd_smallText_Description{
+    @include typo-setup( 2rem, #fff, 500 );
+    max-width: 334px;
+    margin-top: 1px;
+}
+.dd_extraSmall_white{
+    @include typo-setup( 1.25rem, #fff, 900 );
+    max-width: 210px;
+   margin-top: 0;
+}   
