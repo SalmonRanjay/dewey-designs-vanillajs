@@ -1,0 +1,19 @@
+
+.section-wrapper{
+    padding: 1.87rem 6.25rem;
+}   
+.section-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+    height: 300px;
+    margin-top: 10px;
+
+    background-color: #fff;
+
+    .section-container__left,.section-container__right{
+        flex-basis: 50%
+    }
+}
+

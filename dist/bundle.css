@@ -1,0 +1,6 @@
+.section-container {
+  display: flex;
+  flex-direction: row;
+  padding: 1.87rem 1.25rem; }
+  .section-container .section-container__left, .section-container .section-container__right {
+    flex-basis: 50%; }
