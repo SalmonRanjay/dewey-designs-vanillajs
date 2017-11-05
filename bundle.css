@@ -1,6 +1,98 @@
+.sectionPadding {
+  padding: 1.87rem 6.25rem; }
+
 .section-container {
   display: flex;
   flex-direction: row;
-  padding: 1.87rem 1.25rem; }
+  flex-wrap: wrap;
+  height: 300px;
+  margin-top: 10px; }
+  @media (max-width: 599px) {
+    .section-container {
+      flex-direction: row; } }
   .section-container .section-container__left, .section-container .section-container__right {
-    flex-basis: 50%; }
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+    @media (max-width: 599px) {
+      .section-container .section-container__left, .section-container .section-container__right {
+        flex-basis: 100%; } }
+  .section-container .section-container__right {
+    background-color: blue; }
+
+.justifyContent__center {
+  justify-content: center; }
+
+.dd_hr {
+  width: 3.81rem;
+  height: 0.19rem;
+  background-color: #EC5254;
+  border-color: #EC5254; }
+
+body {
+  background-color: #609BFF; }
+
+html {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px; }
+
+.dd_h1_white {
+  font-size: 5.55rem;
+  color: #ffffff;
+  font-weight: 900;
+  margin: 0;
+  text-align: center; }
+  @media (max-width: 599px) {
+    .dd_h1_white {
+      font-size: 2.5rem; } }
+
+.dd_h1_blue {
+  font-size: 5.55rem;
+  color: #3A5F98;
+  font-weight: 900;
+  margin: 0;
+  text-align: center;
+  width: 41.88rem; }
+  @media (max-width: 599px) {
+    .dd_h1_blue {
+      font-size: 2.5rem; } }
+
+.dd_smallText_white {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 500;
+  margin: 0; }
+
+.dd_smallText_Description {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 500;
+  max-width: 300px;
+  margin-top: 1px; }
+
+.dd_extraSmall_white {
+  font-size: 1.25rem;
+  color: #fff;
+  font-weight: 900;
+  max-width: 210px;
+  margin-top: 0; }
+
+.margin-top-14 {
+  margin-top: -14px; }
+
+.dd-absoulte_hr {
+  position: absolute;
+  top: -30px; }
+
+.dd-intro_wrapper {
+  position: relative; }
+
+.dd-primary_button {
+  background-color: #fff;
+  color: #EC5254;
+  font-size: 1.25rem;
+  padding: 1.18rem 1.75rem;
+  border-radius: 0.5rem;
+  min-width: 13.5rem; }
