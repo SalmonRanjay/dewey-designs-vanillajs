@@ -1,30 +1,35 @@
 
 .section-wrapper{
-   
+   width: 100%;
 }   
 
 .sectionPadding{
     padding: 1.87rem 6.25rem;
+    @media(max-width: 599px){
+        padding: 0;
+    }
 }
 .section-container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 100%;
    
-    height: 300px;
+    // height: 300px;
     margin-top: 10px;
     @media(max-width: 599px){
-        flex-direction: row   
+        flex-direction: column; 
     }
 
     .section-container__left,.section-container__right{
-        flex-basis: 50%;
+        // flex-basis: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         @media(max-width: 599px){
-            flex-basis: 100%;   
+            flex-basis: 100%; 
+             flex: 1 auto;  
         }
     }
 
@@ -33,6 +38,9 @@
         img{
             max-width: 32.91rem;
             max-height: 23rem;
+            @media (max-width: 599px) {
+                max-width: 18.91rem;
+            }
         }
     }
     .section-container__right{
@@ -40,13 +48,13 @@
         img{
             max-width: 32.91rem;
             max-height: 23rem;
+            @media (max-width: 599px) {
+                max-width: 18.91rem;
+            }
         }
     }
 }
 
-.justifyContent__center{
-    justify-content: center;
-}
 
 .dd_hr{
     width: 3.81rem;
@@ -54,4 +62,18 @@
     background-color: $mainRed;
     border-color: $mainRed;
 
+}
+
+.dd-absoulte_hr{
+    position: absolute;
+    top: -20px;
+}
+.dd-banner_wrapper{
+    display: flex;
+    flex-flow: column wrap;
+    /* justify-content: center; */
+    align-items: center;
+}
+.dd-alt-blue__bg{
+    background-color: $mainHeadingColor;    
 }

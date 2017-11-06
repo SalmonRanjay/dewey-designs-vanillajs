@@ -19,9 +19,9 @@
 
 .dd_h1_blue{
     @include typo-setup( 5.55rem,$mainHeadingColor ,900 );
-    margin: 0;
+    // margin: 0;
     text-align: center;
-    width: 41.88rem;
+   
     @media (max-width: 599px) {
         font-size: 2.5rem;
      }  
@@ -31,16 +31,27 @@
 
 .dd_smallText_white{
     @include typo-setup( 2rem, #fff, 500 );
-    margin: 0;
+    // margin: 0;
+    
+    @media(max-width: 599px){
+        font-size: 1.5rem;
+        max-width: 210px;
+    }
 }
 
 .dd_smallText_Description{
     @include typo-setup( 2rem, #fff, 500 );
     max-width: 334px;
-    margin-top: 1px;
+    // margin-top: 1px;
+    @media(max-width: 599px){
+        font-size: 1.2rem;
+    }
 }
 .dd_extraSmall_white{
     @include typo-setup( 1.25rem, #fff, 900 );
     max-width: 210px;
-   margin-top: 0;
+    @media screen and (max-width: 599px) {
+        font-size: 0.8rem;
+    }
+//    margin-top: 0;
 }   

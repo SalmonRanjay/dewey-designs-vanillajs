@@ -1,10 +1,40 @@
-.margin-top-14{
-    margin-top: -14px
+.dd-flex-container__reverse{
+    display: flex;
+    flex-flow: column-reverse wrap;
+
+    @media screen and (min-width: 599px) {
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+
+        > div{
+            flex-basis: 50%;
+        }
+    }
 }
 
-.dd-absoulte_hr{
-    position: absolute;
-    top: -30px;
+.dd-flex-container{
+    display: flex;
+    flex-flow: column wrap;
+
+    @media screen and (min-width: 599px) {
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+
+        > div{
+            flex-basis: 50%;
+        }
+    }
+}
+
+.dd-section-image_container{
+    display: flex;
+    justify-content: center;
+    img{
+        max-width: 18.91rem;
+        height: 150px;
+    }
 }
 
 .dd-intro_wrapper{
@@ -13,4 +43,19 @@
 
 .dd-transorm-image_45{
     transform: rotate(-45deg);
+};
+
+.dd-flex-wrapper{
+    display: flex;
+
+}
+.justifyContent__center{
+    justify-content: center;
+}
+.dd-align-center{
+    align-items: center;
+    align-content: center;
+}
+.dd-flex-column{
+    flex-direction: column;
 }
