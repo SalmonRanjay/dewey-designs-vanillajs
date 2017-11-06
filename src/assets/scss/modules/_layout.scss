@@ -37,6 +37,17 @@
     }
 }
 
+.dd-section-text_wrapper{
+
+    @media screen and (min-width: 599px) {
+        display: flex;
+        flex-flow: column;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    
+}
+
 .dd-intro_wrapper{
     position: relative;
 }
