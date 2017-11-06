@@ -32,8 +32,7 @@
     display: flex;
     justify-content: center;
     img{
-        max-width: 18.91rem;
-        height: 150px;
+       
     }
 }
 
@@ -46,6 +45,18 @@
         align-items: center;
     }
     
+}
+
+.dd-section-text_margin_right_200_neg{
+    @media screen and (min-width: 800px) {
+        margin-right: -200px;
+    }
+    
+}
+.dd-section-text_margin_left_200_neg{
+    @media screen and (min-width: 800px) {
+        margin-left: -200px;
+    }
 }
 
 .dd-intro_wrapper{
@@ -62,6 +73,9 @@
 }
 .justifyContent__center{
     justify-content: center;
+}
+.justifyContent__space_between{
+    justify-content: space-between;
 }
 .dd-align-center{
     align-items: center;
