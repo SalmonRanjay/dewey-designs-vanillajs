@@ -75,7 +75,9 @@
     align-items: center;
 }
 .dd-alt-blue__bg{
-    background-color: $mainHeadingColor;    
+    background-color: $mainHeadingColor;
+    width: 100%;
+    padding:  2em 0;
 }
 
 .dd-img_large{
