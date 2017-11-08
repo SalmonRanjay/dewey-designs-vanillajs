@@ -40,7 +40,7 @@ module.exports = {
             template: './src/index.html'
         }),
         new CopyWebpackPlugin([
-            { from: './src/assets/images', to: './assets/images' }
+            { from: './src/assets/images', to: './dewey-designs-vanillajs/assets/images' }
         ]),
         new webpack.optimize.CommonsChunkPlugin({
             names: ['vendor', 'bundle']

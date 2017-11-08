@@ -1,0 +1,16 @@
+<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+ <title/>
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path fill="#ec5254" stroke="#ec5254" id="svg_1" d="m30,22l-28,0l0,-3l12,0l0,-2l-8,0l0,-11l3,0l0,-2l-4,0a1,1 0 0 0 -1,1l0,12l-2,0l0,-14a1,1 0 0 1 1,-1l7,0l0,-2l-7,0a3,3 0 0 0 -3,3l0,20a1,1 0 0 0 1,1l8.85,0l-0.71,5l-1.14,0a1,1 0 0 0 -1,1l-2,0l0,2l22,0l0,-2l-2,0a1,1 0 0 0 -1,-1l-1.13,0l-0.71,-5l8.84,0a1,1 0 0 0 1,-1l0,-6l-2,0l0,5zm-18.85,7l0.71,-5l8.27,0l0.71,5l-9.69,0z"/>
+  <path fill="#ec5254" stroke="#ec5254" id="svg_2" d="m29,1l-14,0a3,3 0 0 0 -3,3l0,6a3,3 0 0 0 3,3l2,0l0,4a1,1 0 0 0 1.71,0.71l4.7,-4.71l5.59,0a3,3 0 0 0 3,-3l0,-6a3,3 0 0 0 -3,-3zm1,9a1,1 0 0 1 -1,1l-6,0a1,1 0 0 0 -0.71,0.29l-3.29,3.3l0,-2.59a1,1 0 0 0 -1,-1l-3,0a1,1 0 0 1 -1,-1l0,-6a1,1 0 0 1 1,-1l14,0a1,1 0 0 1 1,1l0,6z"/>
+  <rect fill="#ec5254" stroke="#ec5254" id="svg_3" y="6" x="21" width="2" height="2"/>
+  <rect fill="#ec5254" stroke="#ec5254" id="svg_4" y="6" x="25" width="2" height="2"/>
+  <rect fill="#ec5254" stroke="#ec5254" id="svg_5" y="6" x="17" width="2" height="2"/>
+ </g>
+</svg>
