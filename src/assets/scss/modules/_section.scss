@@ -73,6 +73,7 @@
     flex-flow: column wrap;
     /* justify-content: center; */
     align-items: center;
+    padding-top: 100px;
 }
 .dd-alt-blue__bg{
     background-color: $mainHeadingColor;
@@ -81,10 +82,11 @@
 }
 
 .dd-img_large{
-    max-width: 18.91rem;
+    margin-right: 400px;
+    max-width: 32.91rem;
     height: 150px;
     @media screen and (min-width: 599px) {
-        max-width: 25.91rem;
+        max-width: 32.91rem;
         height: 21rem;
     }
     
