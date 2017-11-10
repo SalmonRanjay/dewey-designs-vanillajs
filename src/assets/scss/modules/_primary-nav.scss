@@ -1,9 +1,14 @@
 .primary-nav {
     padding-top: 10px;
     margin: 0;
+    padding-left: 0;
+    flex-direction: column;
+    width: 100%;
   
     @media screen and (min-width: 599px) {
       padding-top: 0;
+      flex-direction: row;
+      width: auto;
     }
   
     &--pull-right {
@@ -20,12 +25,14 @@
   
     li {
       list-style: none;
+      margin-bottom: 5px;
     //   display: inline-block;
       padding-right: 7px;
       @media screen and (min-width: 599px) {
         padding-right: 20px;
         float: left;
         display: block;
+        margin-bottom: 0;
       }
     }
   
@@ -37,7 +44,7 @@
     }
   
     a {
-      color: #FFF;
+      color: black;
       font-weight: 300;
       text-decoration: none;
       display: block;
@@ -49,6 +56,7 @@
         font-size: 1rem;
         padding: 12px 0;
         background-color: transparent;
+        color: #FFF;
       }
     }
   }
