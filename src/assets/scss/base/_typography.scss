@@ -44,6 +44,13 @@
 }
 
 
+.dd_text_large{
+    @include typo-setup(1.5rem, #ffffff, 500);
+    @media (min-width: 599px) {
+        font-size: 2.5rem;       
+        max-width: 52.38rem;
+     }  
+}
 
 .dd_smallText_white{
     @include typo-setup( 2rem, #fff, 500 );
