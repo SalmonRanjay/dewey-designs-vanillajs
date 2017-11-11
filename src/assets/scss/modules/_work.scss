@@ -1,0 +1,21 @@
+@mixin color-setup($bg-color){
+    background: $bg-color;
+    box-shadow: 3px 2px 4px 0 rgba(0,0,0,0.50);
+    height: 26.94rem;
+}
+
+.black{
+    @include color-setup(#000000);
+}
+
+.green{
+    @include color-setup(#1BB390);
+}
+
+.yellow{
+    @include color-setup(#F8E71C);
+}
+
+.purple{
+    @include color-setup(#9B8FBA);
+}

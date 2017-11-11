@@ -92,3 +92,19 @@
     }
     
 }
+
+.dd-layout-page_cards{
+    display: flex;
+    flex-flow: column wrap;
+    
+
+    @media screen and (min-width: 599px) {
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0 11rem;
+        > div{
+            flex-basis: 50%;
+        }
+    }
+}

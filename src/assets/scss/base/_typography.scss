@@ -31,6 +31,18 @@
      }  
 }
 
+.dd_h1_black{
+    @include typo-setup( 2.5rem,black ,900 );
+    // margin: 0;
+    
+    text-align: center;
+    @media (min-width: 599px) {
+        font-size: 5.55rem;
+        text-align: center;
+        max-width: 52.38rem;
+     }  
+}
+
 
 
 .dd_smallText_white{
