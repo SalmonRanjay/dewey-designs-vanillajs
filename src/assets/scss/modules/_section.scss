@@ -81,8 +81,8 @@
     padding:  6em 0;
 }
 
-.dd-img_large{
-    margin-right: 400px;
+.dd-img_large_right{
+    margin-right: 300px;
     max-width: 32.91rem;
     height: 150px;
     @media screen and (min-width: 599px) {
@@ -92,7 +92,25 @@
     
 }
 
-.dd-img_medium{
+.dd-img_large_left{
+    margin-right: -300px;
+    max-width: 32.91rem;
+    height: 150px;
+    @media screen and (min-width: 599px) {
+        max-width: 32.91rem;
+        height: 21rem;
+    }
+    
+}
+
+.dd-img_medium_right{
     max-width: 18.91rem;
     height: 150px;
+    margin-right: 300px;
+}
+
+.dd-img_medium_left{
+    max-width: 18.91rem;
+    height: 150px;
+    margin-right: -300px;
 }
