@@ -58,6 +58,8 @@
         background-color: transparent;
         color: #FFF;
       }
+
+      
     }
   }
 
@@ -66,4 +68,10 @@
       @media screen and (min-width: 800px) {
           display: block;
       }
+  };
+
+  .selected-nav{
+    @media screen and (min-width: 599px) {
+      border-bottom: 2px solid #EC5254;
+    }
   }

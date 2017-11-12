@@ -117,3 +117,11 @@
         padding: 0;
     }
 }
+
+.dd-remove-margin{
+    margin: auto;
+    @media screen and (min-width: 599px) {
+        margin: 0;
+    }
+    
+}

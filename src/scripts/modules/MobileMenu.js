@@ -6,6 +6,7 @@ class MobileMenu{
     constructor(){
         this.logo = $('#logo');
         this.siteHeader = $('.dd-nav-wrapper');
+        this.siteHeaderblue = $('.dd-nav-wrapper-blue');
         this.menuIcon = $('.dd-menu-icon');
         this.menuConent = $(".menu-content");
         this.events();
@@ -29,6 +30,7 @@ class MobileMenu{
         this.menuConent.toggleClass("menu-content--is-visible");
         // this.siteHeader.toggleClass("site-header--is-expanded");
         this.menuIcon.toggleClass("meunu-icon--close-x");
+        this.siteHeaderblue.toggleClass('dd-nav_BG_white');
         
      }
 }

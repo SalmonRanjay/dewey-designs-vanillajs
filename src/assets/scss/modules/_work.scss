@@ -31,6 +31,12 @@
 .deepPurple{
     @include color-setup(#BF55EC);
 }
+.orange{
+    @include color-setup(#F26C4F);
+}
+.lightGray{
+    @include color-setup(#34495E);
+}
 
 .dd-layout-flow_column_reverse{
     flex-flow: column-reverse wrap;
