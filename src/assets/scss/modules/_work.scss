@@ -19,6 +19,24 @@
 .purple{
     @include color-setup(#9B8FBA);
 }
+.red{
+    @include color-setup(#EC5254 );
+}
+.blue{
+    @include color-setup(#5D9AF7);
+}
+.deepRed{
+    @include color-setup(#F62459 );
+}
+.deepPurple{
+    @include color-setup(#BF55EC);
+}
+.orange{
+    @include color-setup(#F26C4F);
+}
+.lightGray{
+    @include color-setup(#34495E);
+}
 
 .dd-layout-flow_column_reverse{
     flex-flow: column-reverse wrap;
@@ -73,7 +91,18 @@
     padding-left: 1.5rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    // justify-content: space-between;
     min-height: 270px;
     height: 100%;
+}
+
+.dd-reset-min-height{
+    min-height: auto;
+}
+
+.dd-layout-page_cards-minH{
+    min-height: initial;
+    @media screen and (min-width: 800px) {
+        min-height: 26.8rem;
+    }
 }

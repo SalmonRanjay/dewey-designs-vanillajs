@@ -75,7 +75,10 @@
 
 }
 .justifyContent__center{
-    justify-content: left;
+    justify-content: center;
+}
+.justifyContent__space_between-o{
+    justify-content: space-between;
 }
 .justifyContent__space_between{
     justify-content: space-between;
@@ -103,4 +106,22 @@
 
 .dd-margin-BTM-0{
     margin-bottom: 0;
+}
+.dd-padding-10{
+    padding: 10px;
+    @media screen and (min-width: 599px) {
+        padding: 15px;
+    }
+
+    @media screen and (min-width: 800px) {
+        padding: 0;
+    }
+}
+
+.dd-remove-margin{
+    margin: auto;
+    @media screen and (min-width: 599px) {
+        margin: 0;
+    }
+    
 }
