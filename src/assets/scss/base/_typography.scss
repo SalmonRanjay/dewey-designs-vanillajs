@@ -27,11 +27,30 @@
     @media (min-width: 599px) {
         font-size: 5.55rem;
         text-align: center;
+        max-width: 58.38rem;
+     }  
+}
+
+.dd_h1_black{
+    @include typo-setup( 2.5rem,black ,900 );
+    // margin: 0;
+    
+    text-align: center;
+    @media (min-width: 599px) {
+        font-size: 5.55rem;
+        text-align: center;
         max-width: 52.38rem;
      }  
 }
 
 
+.dd_text_large{
+    @include typo-setup(1.5rem, #ffffff, 500);
+    @media (min-width: 599px) {
+        font-size: 2.5rem;       
+        max-width: 52.38rem;
+     }  
+}
 
 .dd_smallText_white{
     @include typo-setup( 2rem, #fff, 500 );
@@ -53,7 +72,8 @@
 }
 .dd_extraSmall_white{
     @include typo-setup( 1.25rem, #fff, 900 );
-    max-width: 210px;
+    // max-width: 210px;
+    max-width: 17.75rem;
     @media screen and (max-width: 599px) {
         font-size: 0.8rem;
     }

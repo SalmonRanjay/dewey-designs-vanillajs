@@ -1,0 +1,79 @@
+@mixin color-setup($bg-color){
+    background: $bg-color;
+    box-shadow: 3px 2px 4px 0 rgba(0,0,0,0.50);
+    // height: 26.94rem;
+}
+
+.black{
+    @include color-setup(#000000);
+}
+
+.green{
+    @include color-setup(#1BB390);
+}
+
+.yellow{
+    @include color-setup(#F8E71C);
+}
+
+.purple{
+    @include color-setup(#9B8FBA);
+}
+
+.dd-layout-flow_column_reverse{
+    flex-flow: column-reverse wrap;
+}
+
+.dd-layout-flow_column{
+    flex-flow: column wrap;
+}
+
+.dd-layout-page_cards{
+    display: flex;
+    
+    padding: 10px;
+    
+
+    @media screen and (min-width: 800px) {
+        flex-flow: row wrap;
+        justify-content: center;
+       
+        padding: 0 11rem;
+        > div{
+            flex-basis: 50%;
+            // width: 50%;
+        }
+    }
+}
+
+.dd-layout-page_cards_img_cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 17.06rem;
+        height: 14rem;
+    }
+    
+
+    @media screen and (min-width: 800px) {
+        img{
+            height: 22.05rem;
+        }
+    }
+
+    // @media screen and (max-width: 800px) {
+    //     img{
+    //         width: 35.06rem; 
+    //     }
+    // }
+}
+
+.dd-layout-page_text_cont{
+    padding-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 270px;
+    height: 100%;
+}

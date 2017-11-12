@@ -6,6 +6,7 @@
         flex-flow: row wrap;
         justify-content: center;
         align-items: center;
+        padding-top: 200px;
 
         > div{
             flex-basis: 50%;
@@ -21,6 +22,7 @@
         flex-flow: row wrap;
         justify-content: center;
         align-items: center;
+        padding-top: 200px;
 
         > div{
             flex-basis: 50%;
@@ -31,6 +33,7 @@
 .dd-section-image_container{
     display: flex;
     justify-content: center;
+    overflow-x: hidden;
     img{
        
     }
@@ -49,13 +52,13 @@
 
 .dd-section-text_margin_right_200_neg{
     @media screen and (min-width: 800px) {
-        margin-right: -200px;
+        margin-right: -400px;
     }
     
 }
 .dd-section-text_margin_left_200_neg{
     @media screen and (min-width: 800px) {
-        margin-left: -200px;
+        margin-left: -400px;
     }
 }
 
@@ -72,10 +75,11 @@
 
 }
 .justifyContent__center{
-    justify-content: center;
+    justify-content: left;
 }
 .justifyContent__space_between{
     justify-content: space-between;
+    padding: 20px;
 }
 .dd-align-center{
     align-items: center;
@@ -91,4 +95,12 @@
         padding-top: 10rem;
     }
     
+}
+
+.dd-margin-BTM-5{
+    margin-bottom: 5.6rem;
+}
+
+.dd-margin-BTM-0{
+    margin-bottom: 0;
 }

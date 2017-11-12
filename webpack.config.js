@@ -27,6 +27,19 @@ module.exports = {
                 test: /\.(sass|scss)$/,
                 loader: ExtractTextPlugin.extract({ use: ['css-loader', 'sass-loader'] })
             }
+            // ,
+            // {
+            //     test: /\.html$/,
+            //     use: [
+            //         {
+            //             loader: 'file-loader',
+            //             options: {
+            //                 name: '[name].[ext]'
+            //             }
+            //         }
+            //     ],
+            //     exclude: path.resolve(__dirname, 'src/index.html')
+            // }
             // {
             //     test: /\.scss$/,
             //     loader: ExtractTextPlugin.extract('css!sass')
@@ -37,7 +50,24 @@ module.exports = {
     plugins: [
         new ExtractTextPlugin("[name].css"),
         new HtmlWebpackPlugin({
+            filename: 'index.html',
             template: './src/index.html'
+        }),
+        new HtmlWebpackPlugin({
+            filename:'work.html',
+            template: './src/work.html'
+        }),
+        new HtmlWebpackPlugin({
+            filename:'about.html',
+            template: './src/about.html'
+        }),
+        new HtmlWebpackPlugin({
+            filename:'service.html',
+            template: './src/service.html'
+        }),
+        new HtmlWebpackPlugin({
+            filename:'contact.html',
+            template: './src/contact.html'
         }),
         new CopyWebpackPlugin([
             { from: './src/assets/images', to: './dewey-designs-vanillajs/assets/images' }
