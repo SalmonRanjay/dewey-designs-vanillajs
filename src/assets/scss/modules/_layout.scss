@@ -33,6 +33,7 @@
 .dd-section-image_container{
     display: flex;
     justify-content: center;
+    overflow-x: hidden;
     img{
        
     }
@@ -96,3 +97,10 @@
     
 }
 
+.dd-margin-BTM-5{
+    margin-bottom: 5.6rem;
+}
+
+.dd-margin-BTM-0{
+    margin-bottom: 0;
+}

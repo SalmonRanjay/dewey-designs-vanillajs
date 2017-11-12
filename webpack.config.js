@@ -57,6 +57,18 @@ module.exports = {
             filename:'work.html',
             template: './src/work.html'
         }),
+        new HtmlWebpackPlugin({
+            filename:'about.html',
+            template: './src/about.html'
+        }),
+        new HtmlWebpackPlugin({
+            filename:'service.html',
+            template: './src/service.html'
+        }),
+        new HtmlWebpackPlugin({
+            filename:'contact.html',
+            template: './src/contact.html'
+        }),
         new CopyWebpackPlugin([
             { from: './src/assets/images', to: './dewey-designs-vanillajs/assets/images' }
         ]),

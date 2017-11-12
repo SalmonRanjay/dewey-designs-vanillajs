@@ -20,13 +20,21 @@
     @include color-setup(#9B8FBA);
 }
 
+.dd-layout-flow_column_reverse{
+    flex-flow: column-reverse wrap;
+}
+
+.dd-layout-flow_column{
+    flex-flow: column wrap;
+}
+
 .dd-layout-page_cards{
     display: flex;
-    flex-flow: column wrap;
+    
     padding: 10px;
     
 
-    @media screen and (min-width: 599px) {
+    @media screen and (min-width: 800px) {
         flex-flow: row wrap;
         justify-content: center;
        
@@ -41,15 +49,31 @@
 .dd-layout-page_cards_img_cont{
     display: flex;
     justify-content: center;
+    align-items: center;
     img{
-        width: 22.06rem;
-       
-        height: 150px;
+        width: 17.06rem;
+        height: 14rem;
     }
+    
 
-    @media screen and (min-width: 599px) {
+    @media screen and (min-width: 800px) {
         img{
             height: 22.05rem;
         }
     }
+
+    // @media screen and (max-width: 800px) {
+    //     img{
+    //         width: 35.06rem; 
+    //     }
+    // }
+}
+
+.dd-layout-page_text_cont{
+    padding-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 270px;
+    height: 100%;
 }
