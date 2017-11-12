@@ -79,3 +79,15 @@
     }
 //    margin-top: 0;
 }   
+
+.dd-text_description_large{
+    @include typo-setup(1.2rem, #ffffff, 300);
+    margin: 7px 0;
+    max-width: 25.69rem;
+    @media screen and (min-width: 599px) {
+        font-size: 1.87rem;
+    }
+    @media screen and (max-width: 800px ) {
+        max-width: initial;
+    }
+}
