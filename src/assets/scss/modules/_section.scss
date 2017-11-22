@@ -73,8 +73,16 @@
     flex-flow: column wrap;
     /* justify-content: center; */
     align-items: center;
-    // padding-top: 100px;
 }
+
+.dd-banner_wrapper_hero{
+    display: flex;
+    flex-flow: column wrap;
+    /* justify-content: center; */
+    align-items: center;
+    padding-bottom: 160px;
+}
+
 .dd-alt-blue__bg{
     background-color: $mainHeadingColor;
     width: 100%;

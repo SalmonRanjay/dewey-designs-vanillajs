@@ -6,7 +6,7 @@
         flex-flow: row wrap;
         justify-content: center;
         align-items: center;
-        padding-top: 200px;
+        padding-bottom: 80px;
 
         > div{
             flex-basis: 50%;
@@ -22,7 +22,7 @@
         flex-flow: row wrap;
         justify-content: center;
         align-items: center;
-        padding-top: 200px;
+        padding-bottom: 80px;
 
         > div{
             flex-basis: 50%;
@@ -75,7 +75,7 @@
 
 }
 .justifyContent__center{
-    justify-content: center;
+    justify-content: left;
 }
 .justifyContent__space_between-o{
     justify-content: space-between;
