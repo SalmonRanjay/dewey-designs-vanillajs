@@ -69,6 +69,10 @@ module.exports = {
             filename:'contact.html',
             template: './src/contact.html'
         }),
+        new HtmlWebpackPlugin({
+            filename:'careers.html',
+            template: './src/careers.html'
+        }),
         new CopyWebpackPlugin([
             { from: './src/assets/images', to: './dewey-designs-vanillajs/assets/images' }
         ]),

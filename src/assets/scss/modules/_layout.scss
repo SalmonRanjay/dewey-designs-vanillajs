@@ -33,7 +33,7 @@
 .dd-section-image_container{
     display: flex;
     justify-content: center;
-    overflow-x: hidden;
+    // overflow-x: hidden;
     img{
        
     }
@@ -49,6 +49,17 @@
     }
     
 }
+
+.dd-section-text_wrapper_box{
+    
+        @media screen and (min-width: 599px) {
+            display: flex;
+            flex-flow: column;
+            /* justify-content: center; */
+            align-items: left;
+        }
+        
+    }
 
 .dd-section-text_margin_right_200_neg{
     @media screen and (min-width: 800px) {
@@ -75,6 +86,9 @@
 
 }
 .justifyContent__center{
+    justify-content: center;
+}
+.justifyContent__left{
     justify-content: left;
 }
 .justifyContent__space_between-o{
