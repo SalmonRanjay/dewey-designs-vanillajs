@@ -94,6 +94,9 @@
 .justifyContent__space_between-o{
     justify-content: space-between;
 }
+.justifyContent__initial{
+    justify-content: initial !important;
+}
 .justifyContent__space_between{
     justify-content: space-between;
     padding: 20px;
@@ -106,6 +109,14 @@
     flex-direction: column;
 }
 
+.dd-align-initial{
+    align-items: initial;
+}
+
+.flex-basis-100{
+    flex-basis: 100% !important;
+
+}
 .dd-padding-TOP-10-lg{
     padding-top: 2rem;
     @media screen and (min-width: 800px) {
@@ -116,6 +127,13 @@
 
 .dd-margin-BTM-5{
     margin-bottom: 5.6rem;
+}
+
+.dd-margin-BTM-3-5{
+    margin-bottom: 3rem;
+    @media screen and (min-width:800px) {
+        margin-bottom: 5rem;
+    }
 }
 
 .dd-margin-BTM-0{

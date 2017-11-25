@@ -128,3 +128,20 @@
         min-height: 26.8rem;
     }
 }
+
+.dd-form_input{
+    // height: 3rem;
+    background-color: #3A5F98;
+    border: 1px solid #3A5F98;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.5rem;
+
+}
+.dd-form_input_height{
+    height: 3rem;
+}
+
+.dd-remove-max-width{
+    max-width: initial;
+}
