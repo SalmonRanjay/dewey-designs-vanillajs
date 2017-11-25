@@ -72,7 +72,7 @@
 }
 .dd_extrasmallText_Description{
     @include typo-setup( 1.00rem, #fff, 500 );
-    max-width: 334px;
+    // max-width: 334px;
     // margin-top: 1px;
     @media(max-width: 599px){
         font-size: 1.2rem;
@@ -89,7 +89,7 @@
 .dd_extraSmall_white{
     @include typo-setup( 1.25rem, #fff, 900 );
     // max-width: 210px;
-    max-width: 19.75rem;
+    // max-width: 19.75rem;
     @media screen and (max-width: 599px) {
         font-size: 0.8rem;
     }
