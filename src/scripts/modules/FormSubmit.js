@@ -10,7 +10,7 @@ class FormSubmit {
         this.firstname = $('#firstname');
         this.company = $('#company');
         this.email = $("#email");
-        this.phone = $("phone");
+        this.phone = $("#phone");
         this.verificationText = $('#formVerification');
         this.description = $("#description");
 
@@ -48,9 +48,11 @@ class FormSubmit {
         if (Number(that.verificationText.val()) === 4) {
             //submit form
             console.log(formData);
+            // http://localhost:3000/api/mail
+            // https://dewey-design-server.herokuapp.com/api/mail
             $.ajax({
                 type: 'POST',
-                url: 'https://dewey-design-server.herokuapp.com/api/mail',
+                url: 'http://localhost:3000/api/mail',
                 data: formData
             }).done(function (response) {
                 // Make sure that the formMessages div has the 'success' class.
@@ -70,17 +72,7 @@ class FormSubmit {
                 console.log("Success mail sent");
             })
             .fail(function(data) {
-                // // Make sure that the formMessages div has the 'error' class.
-                // $(formMessages).removeClass('success');
-                // $(formMessages).addClass('error');
-            
-                // // Set the message text.
-                // if (data.responseText !== '') {
-                //     $(formMessages).text(data.responseText);
-                // } else {
-                //     $(formMessages).text('Oops! An error occured and your message could not be sent.');
-                // }
-                //console.log(data);
+                
                 console.log("it failed");
                 that.firstname.val('');
                 that.company.val('');
