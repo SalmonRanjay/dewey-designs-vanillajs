@@ -8,16 +8,18 @@ class FormSubmit {
         this.form = $('#ajax-contact');
         this.submitBTN = $('#submitFormBTN');
         this.firstname = $('#firstname');
-        this.lastname = $('#lastname');
+        this.company = $('#company');
         this.email = $("#email");
+        this.phone = $("phone");
         this.verificationText = $('#formVerification');
         this.description = $("#description");
 
          this.firstname.val('');
-         this.lastname.val('');
+         this.company.val('');
          this.description.val('');
          this.email.val('');
          this.verificationText.val('');
+         this.phone.val('');
 
 
         // Get the messages div.
@@ -37,9 +39,10 @@ class FormSubmit {
         event.preventDefault();
         var formData = {
             "firstname": that.firstname.val(),
-            "lastname": that.lastname.val(),
+            "company": that.company.val(),
             "description": that.description.val(),
-            "email": that.email.val()
+            "email": that.email.val(),
+            "phone": that.phone.val()
         };
         console.log(formData);
         if (Number(that.verificationText.val()) === 4) {
@@ -59,10 +62,11 @@ class FormSubmit {
 
                 // Clear the form.
                 that.firstname.val('');
-                that.lastname.val('');
+                that.company.val('');
                 that.email.val('');
                 that.verificationText.val('');
                 that.description.val('');
+                that.phone.val('');
                 console.log("Success mail sent");
             })
             .fail(function(data) {
@@ -76,12 +80,13 @@ class FormSubmit {
                 // } else {
                 //     $(formMessages).text('Oops! An error occured and your message could not be sent.');
                 // }
-                console.log(data);
+                //console.log(data);
                 console.log("it failed");
                 that.firstname.val('');
-                that.lastname.val('');
+                that.company.val('');
                 that.email.val('');
                 that.verificationText.val('');
+                that.phone.val('');
                 that.description.val('');
             });
         } else {
