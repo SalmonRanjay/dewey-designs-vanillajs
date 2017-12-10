@@ -17,6 +17,10 @@
         @media screen and (max-width: 800px) {
             flex-basis: 31%;
          }
+
+         @media screen and (max-width: 1440px) {
+             flex-basis: 38%
+         }
     }
     
 }
@@ -32,11 +36,19 @@
         padding-bottom: 80px;
 
         > div{
-            flex-basis: 50%;
+            // flex-basis: 50%;
 
-
+            @media screen and (max-width: 800px) {
+                flex-basis: 38%;
+             }
         }
     }
+    > div{
+        @media screen and (max-width: 1440px) {
+            flex-basis: 38%
+        }
+    }
+   
 }
 
 .dd-section-image_container{
