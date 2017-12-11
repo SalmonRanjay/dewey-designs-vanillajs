@@ -62,6 +62,7 @@ class FormSubmit {
             alert(error);
             return false;
         }
+        return true;
     }
 
     submitForm(event) {
@@ -124,6 +125,7 @@ class FormSubmit {
                 });
         } else {
             // reject form
+            alert("OOOPS Your Math was wrong! try again");
             console.log("Issue with form");
         }
 
